@@ -1,0 +1,120 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./styles/responsive.scss";
+
+$color_1: #ffffff;
+$color_2: #15ef89;
+$font_family_1: 'Roboto', sans-serif;
+.navbar-toggle{
+	.icon-bar{
+		display: block;
+		width: 22px;
+		height: 2px;
+		border-radius: 1px;
+		+.icon-bar{
+			margin-top: 4px;
+		}
+	}
+}
+
+ul {
+	> .collapse .show
+	{
+		display: block !important;
+	}
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	&:hover {
+		text-decoration: none;
+		outline: none;
+	}
+	&:focus {
+		text-decoration: none;
+		outline: none;
+	}
+	&:visited {
+		text-decoration: none;
+		outline: none;
+	}
+}
+ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.btn-style-one {
+	font-size: 15px;
+	font-weight: 400;
+	color: $color_1;
+	line-height: 28px;
+	padding: 10px 36px;
+	background: #15ef89;
+	border: 1px solid #15ef89;
+	border-radius: 5px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: $font_family_1;
+	transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	&:hover {
+		color: $color_2;
+		border: 1px solid #15ef89;
+		background: transparent;
+		transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+	}
+}
+
+
+.page-title{
+	padding-top: 88px;
+	padding-bottom: 48px;
+	position: relative;
+	background: #f8f8fa;
+}
+.page-title .section-title{
+	float: left;
+}
+.page-title .title-list{
+	float: right;
+	margin-top: 10px;
+}
+.page-title li{
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 600;
+	padding-right: 4px;
+	color: #15ef89;
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+}
+.page-title li i{
+	padding-left: 8px;
+}
+.page-title li a{
+	color: #848484;
+	-o-transition:all 0.5s ease;
+}
+.page-title li a:hover{
+	color: #15ef89;
+	transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-webkit-transition:all 0.5s ease;
+	-ms-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+}
+

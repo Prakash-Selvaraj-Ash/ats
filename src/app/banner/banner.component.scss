@@ -1,0 +1,106 @@
+/*** 
+=============================================
+	Cover Baner
+=============================================
+***/
+
+$color_1: white;
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	33.333% {
+		opacity: 0;
+	}
+	66.666% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fade2 {
+	0% {
+		opacity: 0;
+	}
+	33.333% {
+		opacity: 1;
+	}
+	66.666% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes fade3 {
+	0% {
+		opacity: 0;
+	}
+	33.333% {
+		opacity: 0;
+	}
+	66.666% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.banner {
+	height: 42vw;
+	width: 100%;
+}
+.slider {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.slide1 {
+	position: absolute;
+	width: 100%;
+	height: 42vw;
+	background: url(./../../assets/slider/2.jpg)no-repeat center;
+	background-size: cover;
+	animation: fade 20s infinite;
+	-webkit-animation: fade 20s infinite;
+}
+.slide2 {
+	position: absolute;
+	width: 100%;
+	height: 42vw;
+	background: url(http://webdesign-finder.com/html/fixit/images/slide01.jpg)no-repeat center;
+	background-size: cover;
+	animation: fade2 20s infinite;
+	-webkit-animation: fade2 20s infinite;
+}
+.slide3 {
+	position: absolute;
+	width: 100%;
+	height: 42vw;
+	background: url(http://greenassociatesaccountants.com/restore_wp/wp-content/uploads/2016/11/home_1_slider_2.jpg)no-repeat center;
+	background-size: cover;
+	animation: fade3 20s infinite;
+	-webkit-animation: fade3 20s infinite;
+}
+.slotholder {
+	.text {
+		top: 15vw;
+		font-weight: 500;
+		font-size: 4vw;
+		color: $color_1;
+		position: relative;
+		z-index: 1;
+	}
+	&:after {
+		width: 100%;
+		height: 100%;
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		pointer-events: none;
+	}
+}

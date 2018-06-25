@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('menu-app App', () => {
+describe('altask-app App', () => {
   let page: AppPage;
 
   beforeEach(() => {

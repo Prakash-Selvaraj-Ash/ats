@@ -1,0 +1,31 @@
+$color_1: #ffffff;
+$color_2: #15ef89;
+$font_family_1: 'Roboto', sans-serif;
+$font_family_2: 'Raleway', sans-serif;
+
+.caption-section {
+	padding-top: 55px;
+	padding-bottom: 82px;
+	background: #343742;
+	h3 {
+		font-size: 38px;
+		line-height: 45px;
+		color: $color_1;
+		font-weight: 500;
+		font-family: $font_family_1;
+		span {
+			color: $color_2;
+		}
+	}
+	p {
+		color: $color_1;
+		font-size: 20px;
+		line-height: 32px;
+		font-weight: 400;
+		padding-top: 10px;
+		font-family: $font_family_2;
+	}
+	.link-btn {
+		margin-top: 30px;
+	}
+}
