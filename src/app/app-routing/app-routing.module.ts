@@ -9,6 +9,7 @@ import { BannerComponent } from './../banner/banner.component';
 import { ProductsComponent } from './../products/products.component';
 import { ServiceComponent } from  './../service/service.component';
 import { ContactsComponent } from  './../contacts/contacts.component';
+import { ProdDetailComponent } from  './../prod-detail/prod-detail.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'products/:id', component: ProductsComponent },
   { path: 'service', component : ServiceComponent },
   { path: 'contact', component : ContactsComponent },
+  { path: 'prodDetail/:prodId/:subId', component : ProdDetailComponent },
 ];
 
 @NgModule({

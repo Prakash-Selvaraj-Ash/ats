@@ -6,7 +6,15 @@ export class ProductDomain {
     products: Product[];
   }
 
+  export class kvp{
+    key: string;
+    value: string;
+  }
+
   export class Product{
+    id: number;
+    name: string;
     description: string;
     image: string;
+    descripions: kvp[];
   }

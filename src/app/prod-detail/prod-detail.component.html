@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+<!--Page Title-->
+<section class="page-title">
+  <div class="container">
+    <div class="row">
+      <h3 class="col-md-8 col-xs-9">{{mainProduct.name}}</h3>
+      <ul class="col-md-4 col-xs-3 title-list">
+        <li>
+          <a routerLink="/home">home
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>products > {{mainProduct.name}} </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--End Page Title-->
+
+<div class="row">
+
+  <div class="col-md-6 col-sm-6 col-xs-12">
+    <img [src]="mainProduct.image" style="width:100%;" />
+  </div>
+  <div class="col-md-6 col-sm-6 col-xs-12">
+    <table style="margin: 20%; border:1px solid gray">
+      <tbody>
+        <tr *ngFor="let description of mainProduct.descripions" style="padding: 0 4%">
+          <td  style="padding: 0 4%; border:1px solid gray">{{description.key}}</td>
+          <td  style="padding: 0 4%; border:1px solid gray">{{description.value}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<app-footer></app-footer>

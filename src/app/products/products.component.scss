@@ -1,5 +1,7 @@
 .product-logo{
 	max-width: 100%;
+	width:50%;
+	height: 80%;
 	float:left;
 }
 
@@ -13,41 +15,59 @@
 .product-description{
 	padding: 10px;
 }
-.page-title{
-	padding-top: 88px;
-	padding-bottom: 48px;
+
+
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+	padding: 0 4px;
+	column-count: 2;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+	padding: 0 4px;
 	position: relative;
-	background: #f8f8fa;
 }
-.page-title .section-title{
-	float: left;
+.column:hover{
+	border: 1px solid #777;
+	> .overlay{
+		background-color:black;
+	}
 }
-.page-title .title-list{
-	float: right;
-	margin-top: 10px;
+
+.column > .overlay{
+	background-color:transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
-.page-title li{
-	font-size: 15px;
-	line-height: 30px;
-	font-weight: 600;
-	padding-right: 4px;
-	color: #15ef89;
-	text-transform: capitalize;
-	font-family: 'Open Sans', sans-serif;
-	display: inline-block;
+
+.column img {
+    margin-top: 8px;
+	vertical-align: middle;
 }
-.page-title li i{
-	padding-left: 8px;
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
 }
-.page-title li a{
-	color: #848484;
-	-o-transition:all 0.5s ease;
-}
-.page-title li a:hover{
-	color: #15ef89;
-	transition:all 0.5s ease;
-	-moz-transition:all 0.5s ease;
-	-webkit-transition:all 0.5s ease;
-	-ms-transition:all 0.5s ease;
-	-o-transition:all 0.5s ease;
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
