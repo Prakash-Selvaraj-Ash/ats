@@ -8,7 +8,7 @@ export class Data {
     private pugCuttingProduct1: Product =
         {
             id: 1,
-            name: "Consumable",
+            name: "Pug Cutting",
             description: "We have carved a niche amongst the most trusted names in this business, engaged in offering a comprehensive range of AREV PUG Gas Cutting Machine.",
             image: "./../assets/arev.jpg",
             descripions: [
@@ -33,7 +33,7 @@ export class Data {
             description: "Consumables description",
             image: "./../assets/B&Bartoni/BB consumablea.jpg",
             descripions: [
-                { key: "Machine Model", value: "AREV" },
+                { key: "Machine Model", value: "B&B Bartoni" },
                 { key: "Cutting Capacity", value: "100 mm Thick MS" },
                 { key: "Bevel Cuts", value: "(Upto 45Deg) Upto 75mm Thick MS" },
                 { key: "Cutting Speed", value: "77 – 3000mm / Min" },

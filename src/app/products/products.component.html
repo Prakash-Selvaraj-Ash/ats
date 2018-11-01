@@ -6,7 +6,7 @@
         <div class="row">
             <h3 class="col-md-2 col-xs-3">{{mainProduct.name}}</h3>
             <div class="col-md-6 col-xs-9">
-                <img [src]="mainProduct.logoImage" class=" product-logo" />
+                <img [src]="mainProduct.logoImage" class="product-logo" />
             </div>
             <ul class="col-md-4 title-list">
                 <li>
@@ -21,15 +21,21 @@
 </section>
 <!--End Page Title-->
 
-<div class="container">
-    <div class="row">
-        <a [routerLink]="['/prodDetail', mainProduct.id,  product.id]" class="column" *ngFor="let product of mainProduct.products" style="padding:4%">
-            <img [src]="product.image" style="width:100%" [style.height]="mainProduct.products.length > 3 ? '100%' : '50%'" />
-            <div style="margin: 2% 0 0 0">{{product.description}} </div>
+<ul id="rig">
+    <li *ngFor="let product of mainProduct.products">
+        <!-- <a class="rig-cell" [routerLink]="['/prodDetail', mainProduct.id,  product.id]">
+            
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Lorem Ipsum Dolor</span>
+        </a> -->
+        <a class="rig-cell" [routerLink]="['/prodDetail', mainProduct.id,  product.id]">
+            <span class="rig-img" [ngStyle]="{'background-image': getUrl(product)}"></span>
+            <!-- <span class="rig-img" [style.background-image]="'url(./../assets/arev.jpg)'"></span> -->
+            <h3>{{product.name}}</h3>
+            <span class="rig-overlay"></span>
         </a>
-    </div>
-</div>
-
+    </li>
+</ul>
 
 
 <app-footer></app-footer>

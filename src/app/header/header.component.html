@@ -32,15 +32,14 @@
               <!--  -->
               <div class="navbar-collapse collapse clearfix" id="collapsibleNavbar">
                   <ul class="navbar-nav navigation clearfix">
-                      <li class="current">
+                      <li>
                           <a routerLink="/home">Home</a>
                       </li>
                       <li class="dropdown">
                           <a>Products</a>
-                          <div class="dropdown-btn">
-                              <span class="fa fa-angle-down"></span>
+                          <div class="dropdown-btn dropdown-toggle" data-toggle="dropdown">
                           </div>
-                          <ul id="subMenu">
+                          <ul id="subMenu" class="dropdown-menu">
                               <li>
                                   <a [routerLink]="['/products', 0]">Pug Cutting</a>
                               </li>

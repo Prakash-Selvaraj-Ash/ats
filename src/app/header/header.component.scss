@@ -1,6 +1,7 @@
 /***  Header Top  ***/
 $background-color: #343742;
 $theme-color:#15ef89;
+$theme_color:#15ef89;
 $theme-font-color:#fffefe;
 
 $black: #222222;
@@ -187,7 +188,6 @@ Header Top
 				padding: 0px;
 				z-index: 1;
 				display: none;
-				background: #012f5d;
 				border-top: 3px solid #ffffff;
 				transition: all 500ms ease;
 				-moz-transition: all 500ms ease;
@@ -250,6 +250,15 @@ Header Top
 					transition: all 500ms ease;
 				}
 			}
+		}
+	}
+}
+
+#subMenu.show{
+	display: block !important;
+	li{
+		a{
+			background:#343742;
 		}
 	}
 }

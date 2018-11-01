@@ -24,4 +24,8 @@ export class ProductsComponent implements OnInit {
       this.mainProduct = this.mainProducts.find(p => p.id == id);
     })
   }
+
+  getUrl(product: Product){
+    return "url('"+product.image+"')";
+  }
 }
