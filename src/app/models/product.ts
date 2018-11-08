@@ -17,4 +17,5 @@ export class ProductDomain {
     description: string;
     image: string;
     descripions: kvp[];
+    otherDetails: string[];
   }
