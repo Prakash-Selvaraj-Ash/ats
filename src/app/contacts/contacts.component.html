@@ -65,20 +65,19 @@
       <div class="col-md-8 col-sm-12 col-xs-12">
         <div class="section-title">
           <h4>Get in Touch</h4>
-          <p>Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt ut
-            <br>labore dolore magna aliqua enim ad minim.</p>
+          <p>It's our pleasure to serve you with best quality and on time, Kindly share your requirements to meet your expectation from our end.</p>
         </div>
         <div class="contact-form">
-          <form id="contact-form" name="contact_form" class="default-form" action="http://html.tonatheme.com/2017/power/sendmail.php"
-            method="post" novalidate="novalidate">
+          <form id="contact-form"  name="contact_form" class="default-form" (ngSubmit)="onSubmit()"
+            novalidate="novalidate">
             <div class="row">
               <div class="col-md-6">
-                <input type="text" name="form_name" value="" placeholder="Your Name" required="">
-                <input type="email" name="form_email" value="" placeholder="Enter Email" required="">
-                <input type="text" name="form_phone" value="" placeholder="Phone Number" required="">
+                <input type="text" name="form_name" [(ngModel)]="fromName" placeholder="Your Name" required="">
+                <input type="email" name="form_email" [(ngModel)]="fromEmail" placeholder="Enter Email" required="">
+                <input type="text" name="form_phone" [(ngModel)]="fromPhone" placeholder="Phone Number" required="">
               </div>
               <div class="col-md-6">
-                <textarea name="form_message" placeholder="Your Message.." required=""></textarea>
+                <textarea name="form_message" placeholder="Your Message.." [(ngModel)]="mailMessage" required=""></textarea>
               </div>
               <div class="col-md-12">
                 <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">

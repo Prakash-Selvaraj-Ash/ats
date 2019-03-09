@@ -228,13 +228,37 @@ export class Data {
         ]
     }
 
+    private elnovaMachineProduct: Product = {
+        id: 1,
+        name: "Elnova Online UPS",
+        description: "High frequency & double conversion online technology, Fully Digital microprocessor control & Power management suite bundled",
+        image: "./../assets/Elnova/ups.png",
+        otherDetails: [],
+        descripions:[
+            
+        ]
+    }
+
+    private eatonMachineProduct: Product = {
+        id: 1,
+        name: "Eaton Online UPS",
+        description: "High frequency & double conversion online technology, Fully Digital microprocessor control & Power management suite bundled",
+        image: "./../assets/Eaton/eaton-ups.jpg",
+        otherDetails: [],
+        descripions:[
+            
+        ]
+    }
+
     mainProducts: ProductDomain[] = [
         { id: 0, name: "Pug Cutting", isLogoAvailable: true, logoImage: "./../assets/AREV-Logo.png", products: [this.pugCuttingProduct1] },
         { id: 1, name: "Consumables", isLogoAvailable: true, logoImage: "./../assets/B&Bartoni/B&B Logo.jpg", products: [this.consumablesProduct1, this.consumablesProduct2, this.consumablesProduct3, this.consumablesProduct4, this.consumablesProduct5, this.consumablesProduct6, this.consumablesProduct7] },
         { id: 2, name: "CNC Profile Cutting Machine", isLogoAvailable: true, logoImage: "./../assets/sparkon_logo.png", products: new DataCNC().cncData },
         { id: 3, name: "Cutting Machine Plasma", isLogoAvailable: true, logoImage: "./../assets/Kjellberg/Logo.png", products: [this.kjellbergProduct1] },
         { id: 4, name: "Fillet Welding Tractor", isLogoAvailable: true, logoImage: "./../assets/promotech_logo.png", products: [this.filletTractorProduct1] },
-        { id: 5, name: "Beveling machine", isLogoAvailable: true, logoImage: "./../assets/promotech_logo.png", products: [this.bevelingMachineProduct1] }
+        { id: 5, name: "Beveling machine", isLogoAvailable: true, logoImage: "./../assets/promotech_logo.png", products: [this.bevelingMachineProduct1] },
+        { id: 6, name: "Elnova Online UPS", isLogoAvailable: true, logoImage: "./../assets/Elnova/Elnova-logo.jpg", products: [this.elnovaMachineProduct]},
+        { id: 7, name: "Eaton Online UPS", isLogoAvailable: true, logoImage: "./../assets/Eaton/Eaton-Logo.png", products: [this.eatonMachineProduct]}
     ];
 
 }
