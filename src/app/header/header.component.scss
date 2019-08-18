@@ -1,7 +1,6 @@
 /***  Header Top  ***/
 $background-color: #343742;
-$theme-color:#15ef89;
-$theme_color:#15ef89;
+$theme-color:green;
 $theme-font-color:#fffefe;
 
 $black: #222222;
@@ -210,7 +209,7 @@ Header Top
 						font-size: 14px;
 						text-transform: uppercase;
 						color: $white;
-						background: #15ef89;
+						background: $theme-color;
 						padding: 20px;
 						transition: all 500ms ease;
 						font-family: $font_family_2;

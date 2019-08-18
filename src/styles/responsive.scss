@@ -258,17 +258,17 @@
             }
           }
           &:hover > a {
-            background: #15ef89;
+            background: green;
             color: #fff !important;
           }
           > ul > li {
             &:hover > a, > ul > li:hover > a {
-              background: #15ef89;
+              background: green;
               color: #fff !important;
             }
           }
           &.current > a, &.current-menu-item > a {
-            background: #15ef89;
+            background: green;
             color: #fff !important;
           }
         }

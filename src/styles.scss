@@ -2,7 +2,7 @@
 @import "./styles/responsive.scss";
 
 $color_1: #ffffff;
-$color_2: #15ef89;
+$color_2: green;
 $font_family_1: 'Roboto', sans-serif;
 .navbar-toggle{
 	.icon-bar{
@@ -55,8 +55,8 @@ li {
 	color: $color_1;
 	line-height: 28px;
 	padding: 10px 36px;
-	background: #15ef89;
-	border: 1px solid #15ef89;
+	background: green;
+	border: 1px solid green;
 	border-radius: 5px;
 	display: inline-block;
 	text-transform: uppercase;
@@ -68,7 +68,7 @@ li {
 	-o-transition: all 0.5s ease;
 	&:hover {
 		color: $color_2;
-		border: 1px solid #15ef89;
+		border: 1px solid green;
 		background: transparent;
 		transition: all 0.5s ease;
 		-moz-transition: all 0.5s ease;
@@ -97,7 +97,7 @@ li {
 	line-height: 30px;
 	font-weight: 600;
 	padding-right: 4px;
-	color: #15ef89;
+	color: green;
 	text-transform: capitalize;
 	font-family: 'Open Sans', sans-serif;
 	display: inline-block;
@@ -110,7 +110,7 @@ li {
 	-o-transition:all 0.5s ease;
 }
 .page-title li a:hover{
-	color: #15ef89;
+	color: green;
 	transition:all 0.5s ease;
 	-moz-transition:all 0.5s ease;
 	-webkit-transition:all 0.5s ease;

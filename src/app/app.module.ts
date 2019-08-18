@@ -19,6 +19,7 @@ import { ServiceComponent } from './service/service.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProdDetailComponent } from './prod-detail/prod-detail.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

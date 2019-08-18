@@ -101,7 +101,7 @@ export class Data {
             ]
         }
 
-        private consumablesProduct6: Product =
+    private consumablesProduct6: Product =
         {
             id: 5,
             name: "Plasma Nozzles",
@@ -116,7 +116,7 @@ export class Data {
             ]
         }
 
-        private consumablesProduct7: Product =
+    private consumablesProduct7: Product =
         {
             id: 6,
             name: "Air Plasma Cutting Nozzle",
@@ -234,9 +234,7 @@ export class Data {
         description: "High frequency & double conversion online technology, Fully Digital microprocessor control & Power management suite bundled",
         image: "./../assets/Elnova/ups.png",
         otherDetails: [],
-        descripions:[
-            
-        ]
+        descripions: []
     }
 
     private eatonMachineProduct: Product = {
@@ -245,8 +243,94 @@ export class Data {
         description: "High frequency & double conversion online technology, Fully Digital microprocessor control & Power management suite bundled",
         image: "./../assets/Eaton/eaton-ups.jpg",
         otherDetails: [],
-        descripions:[
-            
+        descripions: [
+
+        ]
+    }
+
+    private abicorMachineProduct: Product = {
+        id: 1,
+        name: "Abicor Binzel",
+        description: "",
+        image: "./../assets/abicor-binzel/extrafire55.png",
+        otherDetails: [],
+        descripions: [
+            {
+                key: "AMPS (A)",
+                value: "30–55"
+            },
+            {
+                key: "INPUT VOLTAGE (VAC)",
+                value: "400V ± 15%"
+            },
+            {
+                key: "PLASMA GAS",
+                value: "COMPRESSED AIR"
+            },
+            {
+                key: "MODES",
+                value: "CUTTING / GRID"
+            },
+            {
+                key: "FREQUENCY (HZ)",
+                value: "50/60"
+            },
+            {
+                key: "MAXIMUM INPUT POWER (KVA)",
+                value: "14.9"
+            },
+            {
+                key: "OUTPUT VOLTAGE (VDC)",
+                value: "170"
+            },
+            {
+                key: "DUTY CYCLE @ 40 °C",
+                value: "50% @ 55A, 100% @ 41A"
+            },
+            {
+                key: "DIMENSION (L × H × W) MM",
+                value: "469.9 × 228.6 × 177"
+            },
+            {
+                key: "WEIGHT(KG)",
+                value: "11.8"
+            },
+            {
+                key: "RECOMMENDED CUTTING CAPACITY (MM)",
+                value: "20"
+            },
+            {
+                key: "SEVERANCE CUTTING CAPACITY (MM)",
+                value: "30"
+            },
+            {
+                key: "PIERCING CUTTING CAPACITY (MM)",
+                value: "20"
+            },
+            {
+                key: "FAIR FLOW @ (LPM/BAR)",
+                value: "270 @ 5,5"
+            },
+            {
+                key: "MAXIMUM INPUT PRESSURE (BAR/PSI)",
+                value: "10/145"
+            },
+            {
+                key: "PROTECTION LEVEL",
+                value: "IP23S"
+            },
+            {
+                key: "INSULATION CLASS",
+                value: "H/F"
+            },
+            {
+                key: "CNC INTERFACE",
+                value: "YES"
+            },
+            {
+                key: "TYPE OF HAND TORCH",
+                value: "FHT-EX®105H"
+            }
         ]
     }
 
@@ -257,8 +341,9 @@ export class Data {
         { id: 3, name: "Cutting Machine Plasma", isLogoAvailable: true, logoImage: "./../assets/Kjellberg/Logo.png", products: [this.kjellbergProduct1] },
         { id: 4, name: "Fillet Welding Tractor", isLogoAvailable: true, logoImage: "./../assets/promotech_logo.png", products: [this.filletTractorProduct1] },
         { id: 5, name: "Beveling machine", isLogoAvailable: true, logoImage: "./../assets/promotech_logo.png", products: [this.bevelingMachineProduct1] },
-        { id: 6, name: "Elnova Online UPS", isLogoAvailable: true, logoImage: "./../assets/Elnova/Elnova-logo.jpg", products: [this.elnovaMachineProduct]},
-        { id: 7, name: "Eaton Online UPS", isLogoAvailable: true, logoImage: "./../assets/Eaton/Eaton-Logo.png", products: [this.eatonMachineProduct]}
+        { id: 6, name: "Elnova Online UPS", isLogoAvailable: true, logoImage: "./../assets/Elnova/Elnova-logo.jpg", products: [this.elnovaMachineProduct] },
+        { id: 7, name: "Eaton Online UPS", isLogoAvailable: true, logoImage: "./../assets/Eaton/Eaton-Logo.png", products: [this.eatonMachineProduct] },
+        { id: 8, name: "Abicor Binzel", isLogoAvailable: true, logoImage: "./../assets/abicor-binzel/logo.png", products: [this.abicorMachineProduct] }
     ];
 
 }
