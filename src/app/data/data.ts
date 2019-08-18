@@ -1,5 +1,6 @@
 import { Product, ProductDomain } from './../models/product';
 import { DataCNC } from './dataCNC'
+import { Abicor } from './dataAbicor';
 
 
 export class Data {
@@ -250,7 +251,7 @@ export class Data {
 
     private abicorMachineProduct: Product = {
         id: 1,
-        name: "Abicor Binzel",
+        name: "EX-TRAFIRE® 55SD",
         description: "",
         image: "./../assets/abicor-binzel/extrafire55.png",
         otherDetails: [],
@@ -343,7 +344,7 @@ export class Data {
         { id: 5, name: "Beveling machine", isLogoAvailable: true, logoImage: "./../assets/promotech_logo.png", products: [this.bevelingMachineProduct1] },
         { id: 6, name: "Elnova Online UPS", isLogoAvailable: true, logoImage: "./../assets/Elnova/Elnova-logo.jpg", products: [this.elnovaMachineProduct] },
         { id: 7, name: "Eaton Online UPS", isLogoAvailable: true, logoImage: "./../assets/Eaton/Eaton-Logo.png", products: [this.eatonMachineProduct] },
-        { id: 8, name: "Abicor Binzel", isLogoAvailable: true, logoImage: "./../assets/abicor-binzel/logo.png", products: [this.abicorMachineProduct] }
+        { id: 8, name: "Abicor Binzel", isLogoAvailable: true, logoImage: "./../assets/abicor-binzel/logo.png", products: new Abicor().abicorData }
     ];
 
 }
