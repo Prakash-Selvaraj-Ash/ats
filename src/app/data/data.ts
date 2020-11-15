@@ -344,7 +344,8 @@ export class Data {
         { id: 5, name: "Beveling machine", isLogoAvailable: true, logoImage: "./../assets/promotech_logo.png", products: [this.bevelingMachineProduct1] },
         { id: 6, name: "Elnova Online UPS", isLogoAvailable: true, logoImage: "./../assets/Elnova/Elnova-logo.jpg", products: [this.elnovaMachineProduct] },
         { id: 7, name: "Eaton Online UPS", isLogoAvailable: true, logoImage: "./../assets/Eaton/Eaton-Logo.png", products: [this.eatonMachineProduct] },
-        { id: 8, name: "Abicor Binzel", isLogoAvailable: true, logoImage: "./../assets/abicor-binzel/logo.png", products: new Abicor().abicorData }
+        { id: 8, name: "Abicor Binzel", isLogoAvailable: true, logoImage: "./../assets/abicor-binzel/logo.png", products: new Abicor().abicorData },
+        { id: 9, name: "AREV CONTROLLER", isLogoAvailable: false, logoImage: "./../assets/logo.png", products: [this.eatonMachineProduct]}
     ];
 
 }
