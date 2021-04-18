@@ -19,21 +19,34 @@
 <!--End Page Title-->
 
 <div class="row" style="padding: 30px 10px">
-
-  <div class="col-md-6 col-sm-6 col-xs-12 center">
+  <div class="col-md-2 col-sm-2 center"></div>
+  <div class="col-md-4 col-sm-4 col-xs-12 center">
     <img [src]="mainProduct.image" style="width:100%;" />
   </div>
   <div class="col-md-6 col-sm-6 col-xs-12">
-    <table style="margin: 20%; border:1px solid gray">
-      <tbody>
-        <tr *ngFor="let description of mainProduct.descripions" style="padding: 0 4%">
-          <td  style="padding: 0 4%; border:1px solid gray">{{description.key}}</td>
-          <td  style="padding: 0 4%; border:1px solid gray">{{description.value}}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div *ngIf="mainProduct.descripions.length > 0 then content">
+
+    </div>
+    <div *ngIf="mainProduct.descripions.length == 0 then detailContent">
+
+    </div>
   </div>
 </div>
+
+<ng-template #content>
+  <table style="margin: 20%; border:1px solid gray">
+    <tbody>
+      <tr *ngFor="let description of mainProduct.descripions" style="padding: 0 4%">
+        <td style="padding: 0 4%; border:1px solid gray">{{description.key}}</td>
+        <td style="padding: 0 4%; border:1px solid gray">{{description.value}}</td>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<ng-template #detailContent>
+  <div>{{mainProduct.description}}</div>
+</ng-template>
 
 
 <app-footer></app-footer>

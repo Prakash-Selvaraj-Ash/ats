@@ -1,5 +1,6 @@
 import { Product, ProductDomain } from './../models/product';
 import { DataCNC } from './dataCNC'
+import { MachData } from './machData';
 import { Abicor } from './dataAbicor';
 
 
@@ -129,6 +130,93 @@ export class Data {
                 { key: "Material", value: "Copper" },
                 { key: "Packaging Type", value: "Box" },
                 { key: "Other Details", value: "Hypertherm Powermax 105" }
+            ]
+        }
+
+    private tcconsumablesProduct1: Product =
+        {
+            id: 1,
+            name: "Thermacut Plasma Consumables",
+            description: "We are a most trusted name among the topmost companies in this business, involved in offeringGas Cutting Consumables.",
+            image: "./../assets/B&Bartoni/Consumables/3.jpg",
+            otherDetails: [],
+            descripions: [
+                { key: "Packaging Type", value: "Box" },
+                { key: "Material", value: "Copper" },
+                { key: "Suitable For", value: "Air, O2, HPR- XD, HPD, Powermax" }
+            ]
+        }
+    
+    private tcconsumablesProduct3: Product =
+        {
+            id: 3,
+            name: "Plasma Consumable Shield",
+            description: "Our company has set benchmark in offeringPlasma Consumable Shield.",
+            image: "./../assets/B&Bartoni/Consumables/2.jpg",
+            otherDetails: [],
+            descripions: [
+                { key: "Packaging Type", value: "Box" },
+                { key: "Material", value: "Mild Steel" },
+                { key: "Model No", value: "220536" },
+                { key: "Suitable For", value: "Shield 130 A Air" },
+                { key: "Other Details", value: "130A Air" }
+            ]
+        }
+    private tcconsumablesProduct4: Product =
+        {
+            id: 4,
+            name: "Thermacut Electrode",
+            description: "Banking on the skills of our qualified team of professionals, we are involved in providingHypertherm Electrode.",
+            image: "./../assets/B&Bartoni/Consumables/4.jpg",
+            otherDetails: [],
+            descripions: [
+                { key: "Model No", value: "220842" },
+                { key: "Cutting Current", value: "45 A - 105 A" },
+                { key: "Material", value: "Copper" },
+                { key: "Packaging Type", value: "Packet" }
+            ]
+        }
+    private tcconsumablesProduct5: Product =
+        {
+            id: 4,
+            name: "Thermacut Cutting Electrode",
+            description: "Matching up with the ever increasing requirements of the customers, our company is engaged in providingHypertherm Cutting Electrode.",
+            image: "./../assets/B&Bartoni/Consumables/5.jpg",
+            otherDetails: [],
+            descripions: [
+                { key: "Model No", value: "B220528" },
+                { key: "Cutting Current", value: "45-50A" },
+                { key: "Material", value: "Copper" },
+                { key: "Packaging Type", value: "Packet" },
+                { key: "Other Details", value: "Air, O2, SC" }
+            ]
+        }
+
+    private tcconsumablesProduct6: Product =
+        {
+            id: 5,
+            name: "Plasma Nozzles",
+            description: "Our association is broadly known for maintaining the quality in offering Plasma Nozzles.",
+            image: "./../assets/B&Bartoni/Consumables/6.jpg",
+            otherDetails: [],
+            descripions: [
+                { key: "Model No", value: "220941" },
+                { key: "Material", value: "Copper" },
+                { key: "Packaging Type", value: "Box" },
+            ]
+        }
+
+    private tcconsumablesProduct7: Product =
+        {
+            id: 6,
+            name: "Air Plasma Cutting Nozzle",
+            description: "Our company holds immense experience in this domain and is involved in offering a wide assortment of AirPlasma Cutting Nozzle.",
+            image: "./../assets/therma-cut/tc-consumable.PNG",
+            otherDetails: [],
+            descripions: [
+                { key: "Model No", value: "220941" },
+                { key: "Material", value: "Copper" },
+                { key: "Packaging Type", value: "Box" },
             ]
         }
 
@@ -336,7 +424,7 @@ export class Data {
     }
 
     mainProducts: ProductDomain[] = [
-        { id: 0, name: "Pug Cutting", isLogoAvailable: true, logoImage: "./../assets/AREV-Logo.png", products: [this.pugCuttingProduct1] },
+        { id: 0, name: "Pug Cutting", isLogoAvailable: true, logoImage: "./../assets/AS.jpg", products: [this.pugCuttingProduct1] },
         { id: 1, name: "Consumables", isLogoAvailable: true, logoImage: "./../assets/B&Bartoni/B&B Logo.jpg", products: [this.consumablesProduct1, this.consumablesProduct2, this.consumablesProduct3, this.consumablesProduct4, this.consumablesProduct5, this.consumablesProduct6, this.consumablesProduct7] },
         { id: 2, name: "CNC Profile Cutting Machine", isLogoAvailable: true, logoImage: "./../assets/sparkon_logo.png", products: new DataCNC().cncData },
         { id: 3, name: "Cutting Machine Plasma", isLogoAvailable: true, logoImage: "./../assets/Kjellberg/Logo.png", products: [this.kjellbergProduct1] },
@@ -345,7 +433,9 @@ export class Data {
         { id: 6, name: "Elnova Online UPS", isLogoAvailable: true, logoImage: "./../assets/Elnova/Elnova-logo.jpg", products: [this.elnovaMachineProduct] },
         { id: 7, name: "Eaton Online UPS", isLogoAvailable: true, logoImage: "./../assets/Eaton/Eaton-Logo.png", products: [this.eatonMachineProduct] },
         { id: 8, name: "Abicor Binzel", isLogoAvailable: true, logoImage: "./../assets/abicor-binzel/logo.png", products: new Abicor().abicorData },
-        { id: 9, name: "AREV CONTROLLER", isLogoAvailable: false, logoImage: "./../assets/logo.png", products: [this.eatonMachineProduct]}
+        { id: 9, name: "AREV CNC CONTROLLER", isLogoAvailable: true, logoImage: "./../assets/AREVCAT22.PNG", products: [this.eatonMachineProduct] },
+        { id: 10, name: "ThermaCut", isLogoAvailable: true, logoImage: "./../assets/therma-cut/tc.png", products: [this.tcconsumablesProduct1, this.tcconsumablesProduct3, this.tcconsumablesProduct4, this.tcconsumablesProduct5, this.tcconsumablesProduct6, this.tcconsumablesProduct7] },
+        { id: 11, name: "CNC Controller Router, Milling & Lathe", isLogoAvailable: true, logoImage: "./../assets/AREVCAT22.PNG", products: new MachData().cncData },
     ];
 
 }
