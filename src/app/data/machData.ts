@@ -24,7 +24,7 @@ export class MachData {
 
     private cncProduct3: Product = {
         id: 3,
-        name: "MACH4 CNC WOOD ROUTER",
+        name: "MACH4 CNC LATHE",
         description: "Mach4 is our newest version of CNC motion control software.Mach4 was written from the ground up to be expandable, flexible, and extremely responsive for use with very large files. The architecture of Mach4 is modular and allows for quicker development to expand the already large feature set that Mach4 offers. The Mach4 EtherCAT motion control software for run Mills, Drills, Lathes, Routers, Tangential knife, Plasma, and 3D Printer machines.",
         image: "./../assets/Mach4/MACH4 SCREEN5.jpeg",
         otherDetails: [

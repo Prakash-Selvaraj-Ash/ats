@@ -1,7 +1,7 @@
 import { Product, ProductDomain } from './../models/product';
-import { DataCNC } from './dataCNC'
-import { MachData } from './machData';
 import { Abicor } from './dataAbicor';
+import { DataCNC } from './dataCNC';
+import { MachData } from './machData';
 
 
 export class Data {
@@ -146,7 +146,7 @@ export class Data {
                 { key: "Suitable For", value: "Air, O2, HPR- XD, HPD, Powermax" }
             ]
         }
-    
+
     private tcconsumablesProduct3: Product =
         {
             id: 3,
@@ -423,6 +423,58 @@ export class Data {
         ]
     }
 
+    private saralAccountingSoftware: Product =
+        {
+            id: 1,
+            name: "SARAL Accounts",
+            description: "Complete, GST Enabled Accounting software with voucher entry, account books, TDS and financial statements, Auto Receipt and Payment for Cash Transactions, Interest calculation on balance outstanding, Auto Bank Reconciliation (BRS) and General ledger, Budget Management and comparison with actuals, Multiple Modes to capture Closing Stock, Auto Cheque Printing, Bulk Payment and Receipt entry & TDS and Service tax auto calculation in journal expenses",
+            image: "./../assets/saral-logo-jpg-500x500.jpg",
+            otherDetails: [],
+            descripions: [
+            ]
+        }
+
+    private carvecoMakerPlus: Product =
+        {
+            id: 1,
+            name: "Carveco Maker +",
+            description: "Carveco Maker Plus expands on the design capabilities of Carveco® Maker by introducing powerful 3D design tools into your workflow. Apply fades to your relief artwork, create complex weaves and smooth model imperfections through directly sculpting on your model with the included Smooth and Erase tools. With our latest update (v 1.18) we’re taking your modelling capabilities much further. With the addition of Turn, Spin, Texture Relief and Cookie-Cutter tools, you’ll be able to create intricate 3D designs, faster and much easier than before.",
+            image: "./../assets/makerplus.png",
+            otherDetails: [],
+            descripions: []
+        }
+
+    private carvecoPremium: Product =
+        {
+            id: 2,
+            name: "Carveco Premium",
+            description: "The Carveco™ software range is the trusted CAD modelling and CNC machining solution to a multitude of industries worldwide. The easy-to-use, yet immensely powerful, tools included in Carveco software give sign-makers, woodworkers, engravers, jewellers (and countless other creatives) the freedom to design and manufacture high-quality 2D or 3D products from their artwork, faster than they’d ever thought possible.",
+            image: "./../assets/premium.png",
+            otherDetails: [],
+            descripions: []
+        }
+
+    private mach4: Product =
+        {
+            id: 3,
+            name: "Mach4 Industrial",
+            description: "The standard Mach4 Industrial installer contains the screens and profiles to run Mills, Drills, Lathes, Routers, Tangential knife, Plasma, and 3D Printer machines. The full list of machines being controlled by Mach4 is much longer, but these machines can quickly be setup with the profiles and screens available in the standard Mach4 installer. Laser is the next machine to get a full profile for easy setup",
+            image: "./../assets/artsoft-logo.png",
+            otherDetails: [],
+            descripions: []
+        }
+
+    private kingstarEtherCat: Product =
+        {
+            id: 1,
+            name: "Fieldbus powered by Ethercat",
+            description: "KINGSTAR Fieldbus powered by EtherCAT provides support for CANopen over EtherCAT and simplified configuration of EtherCAT networks. Using a powerful RTX64 runtime from IntervalZero that transforms Windows into a real-time operating system (RTOS), the system delivers the highest precision and deterministic performance.  The distinguishing and unmatched features are the auto-discovery and auto-configuration features that deliver the only plug-and-play capability in the industry.",
+            image: "./../assets/KingstarIZ.png",
+            otherDetails: [],
+            descripions: []
+        }
+
+
     mainProducts: ProductDomain[] = [
         { id: 0, name: "Pug Cutting", isLogoAvailable: true, logoImage: "./../assets/AS.jpg", products: [this.pugCuttingProduct1] },
         { id: 1, name: "Consumables", isLogoAvailable: true, logoImage: "./../assets/B&Bartoni/B&B Logo.jpg", products: [this.consumablesProduct1, this.consumablesProduct2, this.consumablesProduct3, this.consumablesProduct4, this.consumablesProduct5, this.consumablesProduct6, this.consumablesProduct7] },
@@ -436,6 +488,9 @@ export class Data {
         { id: 9, name: "AREV CNC CONTROLLER", isLogoAvailable: true, logoImage: "./../assets/AREVCAT22.PNG", products: [this.eatonMachineProduct] },
         { id: 10, name: "ThermaCut", isLogoAvailable: true, logoImage: "./../assets/therma-cut/tc.png", products: [this.tcconsumablesProduct1, this.tcconsumablesProduct3, this.tcconsumablesProduct4, this.tcconsumablesProduct5, this.tcconsumablesProduct6, this.tcconsumablesProduct7] },
         { id: 11, name: "CNC Controller Router, Milling & Lathe", isLogoAvailable: true, logoImage: "./../assets/AREVCAT22.PNG", products: new MachData().cncData },
+        { id: 12, name: 'Accounting, Billing & E-Invoicing', isLogoAvailable: true, logoImage: "./../assets/saral-logo-jpg-500x500.jpg", products: [this.saralAccountingSoftware] },
+        { id: 13, name: 'CAD CAM', isLogoAvailable: false, logoImage: "./../assets/Carveco_logo.PNG", products: [this.carvecoMakerPlus, this.carvecoPremium, this.mach4] },
+        { id: 14, name: 'Fieldbus powered by Ethercat', isLogoAvailable: true, logoImage: "./../assets/KingstarIZ.png", products: [this.kingstarEtherCat] }
     ];
 
 }
