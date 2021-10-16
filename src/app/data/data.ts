@@ -478,18 +478,8 @@ export class Data {
         {
             id: 1,
             name: "Servo system",
-            description: "High dynamic performance with a compact footprint: the SV660N servo solution for industrial automation applications. \n User friendly installation, Easy set-up and tuning, Ultra-fast 4.5 kHz current loop, Speed loop bandwidth up to 3 kHz, Complies with CE and UL",
+            description: "Improved performance with ultra-fast current loop SV660N’s 4.5 kHz current loop bandwidth allows the motor to follow the motion profile with minimal error. The drive achieves a radically improved system performance with a shorter settling time and higher throughput. In case of mechanical resonance, high performance can be ensured through use of notch filters (up to four notch filters are available for simultaneous use if necessary)",
             image: "./../assets/servo-drive.png",
-            otherDetails: [],
-            descripions: []
-        }
-
-    private servoMotor: Product =
-        {
-            id: 2,
-            name: "Servo Motor",
-            description: "The highly dynamic MS1 servo motor range has a wide variety of power ratings, as well as flange and brake options",
-            image: "./../assets/servo-motor.png",
             otherDetails: [],
             descripions: []
         }
@@ -499,7 +489,7 @@ export class Data {
             id: 3,
             name: "AC Drives",
             description: "Open loop, three phase, 400 V, 0.4-500 kW; 200 VAC, 0.4-75 kW. Dual rated (G & P ratings), allowing optimized product selection, Open loop V/f (with slip compensation), Automatic torque boost, Slip compensation",
-            image: "./../assets/acdrive.png",
+            image: "./../assets/drive.png",
             otherDetails: [],
             descripions: []
         }
@@ -521,7 +511,7 @@ export class Data {
         { id: 12, name: 'Accounting, Billing & E-Invoicing', isLogoAvailable: true, logoImage: "./../assets/saral-logo-jpg-500x500.jpg", products: [this.saralAccountingSoftware] },
         { id: 13, name: 'CAD CAM', isLogoAvailable: false, logoImage: "./../assets/Carveco_logo.PNG", products: [this.carvecoMakerPlus, this.carvecoPremium, this.mach4] },
         { id: 14, name: 'Fieldbus powered by Ethercat', isLogoAvailable: true, logoImage: "./../assets/KingstarIZ.png", products: [this.kingstarEtherCat] },
-        { id: 15, name: 'Motion control', isLogoAvailable: true, logoImage: "./../assets/inovance_logo.png", products: [this.servoSystem, this.servoMotor, this.acDrives] }
+        { id: 15, name: 'Motion control', isLogoAvailable: true, logoImage: "./../assets/inovance_logo.png", products: [this.servoSystem, this.acDrives] }
     ];
 
 }
