@@ -34,7 +34,7 @@ export class Data {
     private consumablesProduct1: Product =
         {
             id: 1,
-            name: "Hypertherm Plasma Consumables",
+            name: " Plasma Consumables",
             description: "We are a most trusted name among the topmost companies in this business, involved in offeringGas Cutting Consumables.",
             image: "./../assets/B&Bartoni/Consumables/3.jpg",
             otherDetails: [],
@@ -47,8 +47,8 @@ export class Data {
     private consumablesProduct2: Product =
         {
             id: 2,
-            name: "Hypertherm Consumables Swirl Ring",
-            description: "Leveraging the skills of our qualified team of professionals, we are instrumental in offering a wide range ofHypertherm Consumables Swirl Ring.",
+            name: " Consumables Swirl Ring",
+            description: "Leveraging the skills of our qualified team of professionals, we are instrumental in offering a wide range of Consumables Swirl Ring.",
             image: "./../assets/B&Bartoni/Consumables/1.jpg",
             otherDetails: [],
             descripions: [
@@ -76,8 +76,8 @@ export class Data {
     private consumablesProduct4: Product =
         {
             id: 4,
-            name: "Hypertherm Electrode",
-            description: "Banking on the skills of our qualified team of professionals, we are involved in providingHypertherm Electrode.",
+            name: " Electrode",
+            description: "Banking on the skills of our qualified team of professionals, we are involved in providing Electrode.",
             image: "./../assets/B&Bartoni/Consumables/4.jpg",
             otherDetails: [],
             descripions: [
@@ -90,8 +90,8 @@ export class Data {
     private consumablesProduct5: Product =
         {
             id: 4,
-            name: "Hypertherm Cutting Electrode",
-            description: "Matching up with the ever increasing requirements of the customers, our company is engaged in providingHypertherm Cutting Electrode.",
+            name: " Cutting Electrode",
+            description: "Matching up with the ever increasing requirements of the customers, our company is engaged in providing Cutting Electrode.",
             image: "./../assets/B&Bartoni/Consumables/5.jpg",
             otherDetails: [],
             descripions: [
@@ -114,7 +114,7 @@ export class Data {
                 { key: "Model No", value: "220941" },
                 { key: "Material", value: "Copper" },
                 { key: "Packaging Type", value: "Box" },
-                { key: "Other Details", value: "Hypertherm Powermax 105" }
+                { key: "Other Details", value: " Powermax 105" }
             ]
         }
 
@@ -129,7 +129,7 @@ export class Data {
                 { key: "Model No", value: "220941" },
                 { key: "Material", value: "Copper" },
                 { key: "Packaging Type", value: "Box" },
-                { key: "Other Details", value: "Hypertherm Powermax 105" }
+                { key: "Other Details", value: " Powermax 105" }
             ]
         }
 
@@ -166,7 +166,7 @@ export class Data {
         {
             id: 4,
             name: "Thermacut Electrode",
-            description: "Banking on the skills of our qualified team of professionals, we are involved in providingHypertherm Electrode.",
+            description: "Banking on the skills of our qualified team of professionals, we are involved in providing Electrode.",
             image: "./../assets/B&Bartoni/Consumables/4.jpg",
             otherDetails: [],
             descripions: [
@@ -180,7 +180,7 @@ export class Data {
         {
             id: 4,
             name: "Thermacut Cutting Electrode",
-            description: "Matching up with the ever increasing requirements of the customers, our company is engaged in providingHypertherm Cutting Electrode.",
+            description: "Matching up with the ever increasing requirements of the customers, our company is engaged in providing Cutting Electrode.",
             image: "./../assets/B&Bartoni/Consumables/5.jpg",
             otherDetails: [],
             descripions: [
