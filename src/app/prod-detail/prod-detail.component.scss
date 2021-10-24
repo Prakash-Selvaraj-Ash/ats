@@ -1,6 +1,25 @@
 .center {
     margin: auto;
-    width: 50%;
-    
+    width: 50%;  
     padding: 10px;
+  }
+  
+  .detail-parent:last-child{
+    border-bottom: 1px solid gray;
+  }
+  .detail-parent{
+    
+    span{
+      border-top: 1px solid gray;
+    }
+    .detail-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      div{
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+        padding: 2%;
+      }
+    }
+    
   }

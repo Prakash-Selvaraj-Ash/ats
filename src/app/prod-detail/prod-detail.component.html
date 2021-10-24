@@ -23,7 +23,7 @@
   <div class="col-md-4 col-sm-4 col-xs-12 center">
     <img [src]="mainProduct.image" style="width:100%;" />
   </div>
-  <div class="col-md-6 col-sm-6 col-xs-12">
+  <div class="detail-panel" class="col-md-6 col-sm-6 col-xs-12">
     <div *ngIf="mainProduct.descripions.length > 0 then content">
 
     </div>
@@ -34,14 +34,12 @@
 </div>
 
 <ng-template #content>
-  <table style="margin: 20%; border:1px solid gray">
-    <tbody>
-      <tr *ngFor="let description of mainProduct.descripions" style="padding: 0 4%">
-        <td style="padding: 0 4%; border:1px solid gray">{{description.key}}</td>
-        <td style="padding: 0 4%; border:1px solid gray">{{description.value}}</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="detail-parent">
+    <span class="detail-grid vertical-center" *ngFor="let description of mainProduct.descripions">
+      <div>{{description.key}}</div>
+      <div>{{description.value}}</div>
+    </span>
+  </div>
 </ng-template>
 
 <ng-template #detailContent>

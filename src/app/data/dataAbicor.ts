@@ -153,9 +153,9 @@ export class Abicor {
         image: "./../assets/abicor-binzel/extrack.jpeg",
         otherDetails: [],
         descripions: [
-            { key: "Input Voltage (VaC)", value: "230V OR 120V, 50/60Hz, 180W, 0.5A" },
+            { key: "Input Voltage (VAC); MAX", value: "230V OR 120V, 50/60Hz, 180W, 0.5A" },
             { key: "Cutting area", value: "3000×1500mm / 3050×1525mm (10×5FT)" },
-            { key: "MAX. position speed", value: "UP TO 3000mm/mIN (118IPm)" },
+            { key: "MAX. position speed", value: "UP TO 3000mm/min (118inch/min)" },
             { key: "Vertical stroke", value: "100mm (4 INCH) WITH MOTORIZED LIFTER" },
             { key: "OXY-FUEL CUTTING RANGE", value: "UP TO 100mm (4 INCH)" },
             { key: "PLASMA CUTTING RANGE", value: "UP TO 35mm (1 3/8 INCH)" },
